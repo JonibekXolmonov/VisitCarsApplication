@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">VisitCarsApplication</string>
+    <string name="app_name">VisitCardApplication</string>
+    <string name="my_name">Developer Jonibek</string>
+    <string name="call">Phone call</string>
+    <string name="phone_number">tel:+998932479778</string>
+    <string name="telegram">Telegram</string>
+    <string name="telegram_link">https://t.me/JonibekXolmonov</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebook_link">https://www.facebook.com/JonibekXolmonov</string>
+    <string name="gitHub">GitHub</string>
+    <string name="gitHub_link">https://github.com/Perennial2002</string>
+    <string name="my_images">Pictures</string>
 </resources>

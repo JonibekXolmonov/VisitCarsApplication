@@ -13,35 +13,63 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        openInstagram()
         call()
+        openTelegram()
+        openFacebook()
+        openGitHUb()
         openImages()
 
-    }
-
-    private fun openInstagram() {
-        val instagramButton = findViewById<Button>(R.id.btn_instagram)
-        instagramButton.setOnClickListener {
-            openInstagramProfile("https://www.instagram.com/eliot/")
-        }
-    }
-
-    private fun openInstagramProfile(url: String) {
-        val intent = Intent(Intent.ACTION_VIEW)
-        intent.data = Uri.parse(url)
-        startActivity(intent)
     }
 
     private fun call() {
         val callButton = findViewById<Button>(R.id.btn_phone_call)
         callButton.setOnClickListener {
-            phoneCall("tel:+998914631974")
+            phoneCall(getString(R.string.phone_number))
         }
     }
 
     private fun phoneCall(phoneNumber: String) {
         val intent = Intent(Intent.ACTION_DIAL)
         intent.data = Uri.parse(phoneNumber)
+        startActivity(intent)
+    }
+
+    private fun openTelegram() {
+        val instagramButton = findViewById<Button>(R.id.btn_telegram)
+        instagramButton.setOnClickListener {
+            openTelegramProfile(getString(R.string.telegram_link))
+        }
+    }
+
+    private fun openTelegramProfile(url: String) {
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
+
+    private fun openFacebook() {
+        val instagramButton = findViewById<Button>(R.id.btn_facebook)
+        instagramButton.setOnClickListener {
+            openFacebookProfile(getString(R.string.facebook_link))
+        }
+    }
+
+    private fun openFacebookProfile(url: String) {
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
+
+    private fun openGitHUb() {
+        val instagramButton = findViewById<Button>(R.id.btn_gitHub)
+        instagramButton.setOnClickListener {
+            openGitHubProfile(getString(R.string.gitHub_link))
+        }
+    }
+
+    private fun openGitHubProfile(url: String) {
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
         startActivity(intent)
     }
 

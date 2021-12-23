@@ -17,27 +17,47 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="145dp"
-        android:text="Developer Jonibek"
+        android:text="@string/my_name"
         android:textColor="@color/teal_200"
         android:textSize="32sp"
         android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btn_instagram"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="100dp"
-        android:text="Instagram"
-        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/btn_phone_call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        android:text="@string/call"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/btn_telegram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginBottom="50dp"
-        android:text="Call me"
+        android:text="@string/telegram"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:text="@string/facebook"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/btn_gitHub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-50dp"
+        android:text="@string/gitHub"
         android:textAllCaps="false" />
 
     <Button
@@ -45,8 +65,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="0dp"
-        android:text="Display pictures"
+        android:layout_marginBottom="-100dp"
+        android:text="@string/my_images"
         android:textAllCaps="false" />
+
 
 </FrameLayout>
